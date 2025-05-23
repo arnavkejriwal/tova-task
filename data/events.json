@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "uuid": "abc123",
+    "title": "Cocktail Making Social",
+    "description": "Shake, stir, and connect with other Tova members.",
+    "location": "Soho House, Hong Kong",
+    "date": "2025-06-01T18:30:00",
+    "mainImageUrl": "https://veryvalencia.com/tours/packageimages/resized/mobile/valencia-cocktail-making-class-001b.jpg",
+    "memberPrice": 120,
+    "nonMemberPrice": 200,
+    "capacity": 25
+  },
+  {
+    "id": 2,
+    "uuid": "def456",
+    "title": "Sunday Hiking Meetup",
+    "description": "Scenic views and new friends.",
+    "location": "Dragon's Back Trail",
+    "date": "2025-06-02T10:00:00",
+    "mainImageUrl": "https://www.nps.gov/subjects/trails/images/hiking-family-NPS-neil-herbert-YELL.jpg",
+    "memberPrice": 0,
+    "nonMemberPrice": 50,
+    "capacity": 0
+  }
+]

@@ -1,50 +1,70 @@
-# Welcome to your Expo app 👋
+# Event Booking App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+An Expo application enabling users to browse and bookmark events, and join activities.
 
-## Get started
+---
 
-1. Install dependencies
+### Features
+
+- 🔖 **Bookmark Events**: Save favorite events for quick access
+- ✅ **Join Events**: Mark participation in events, with a responsive UI to reflect status
+- 💾 **Local Storage**: Bookmarks and join status are stored using `AsyncStorage`
+- 🌙 **Dark Theme**: Clean dark UI with bold accent color following the Tova color scheme
+- 🧭 **Custom Navigation**: Tab navigation via Expo Router with custom icons and labels
+- 🚫 **"FULL" Badge**: Displays a badge when event capacity is 0
+- 🗓️ **Formatted Dates**: Dates and times are human-readable for better UX
+- 🌀 **Animations**: Subtle scaling animation on Join button interaction for better responsiveness
+
+---
+
+### Setup Instructions
+
+#### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js (v14 or newer)
+- npm (v6 or newer)
+- Expo CLI (`npm install -g expo-cli`)
+
+#### Installation & Run
+
+1. **Install dependencies:**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. **Start the development server:**
 
    ```bash
-   npx expo start
+   npm run start
    ```
 
-In the output, you'll find options to open the app in a
+3. **Run in browser (optional):**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   ```bash
+   npm run web
+   ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+4. **Launch on device:**
 
-## Get a fresh project
+   - Scan the QR code using the Expo Go app on your mobile device
+   - Or run the app in an Android/iOS simulator via the Expo DevTools
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+### Design Decisions
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- **Mobile First:** The UI is tailored for mobile screens with responsive layout and touch feedback
+- **Context API**: Used for managing global state (bookmarks and joined events)
+- **Persistent Data**: `AsyncStorage` ensures user data is retained between sessions
+- **Modular Components**: Components like `EventCard` are reusable and encapsulate logic and UI
+- **Performance Considerations**: Minimal external dependencies, optimized component rendering
+- **Styling**: Utilizes `StyleSheet` for performance and readability while matching the Tova brand aesthetic
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+### Icons
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Iconography provided via `@expo/vector-icons`
